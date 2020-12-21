@@ -1,0 +1,9 @@
+
+body { background-color: #eaf3da; font-family: sans-serif;}
+p.welcome, blockquote.welcome {color: black;}
+.welcome {font-size: medium;}
+p.seattle {color: blue;}
+p.england {color: red;}
+h1, h2 {color: gray;}
+h1 {border-bottom: 1px solid black}
+em {font-family: serif;}
