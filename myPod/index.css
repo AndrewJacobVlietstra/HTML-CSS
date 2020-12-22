@@ -4,7 +4,17 @@
     src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");}
 
-body {background-color: #eaf3da; font-family: Verdana, Helvetica, Arial, sans-serif;
+@media screen and (min-device-width: 481px) {
+    #clickimage {margin-right: 200px;}
+}
+@media screen and (max-device-width: 480px) {
+    #clickimage {margin-right: 30px;}
+}
+@media print {
+    body {font-family: Times, "Times New Roman", serif;}
+}
+
+body {background-color: #e3eecf; font-family: Verdana, Helvetica, Arial, sans-serif;
         font-size: small; line-height: 1.6em;}
 p.welcome {color: black;}
 p.seattle {color: black;}
@@ -16,13 +26,22 @@ h1, h2 {color: rgb(70, 70, 70); font-family: "Emblema One", Verdana, Geneva, san
 h1 {font-size: 200%;}
 h2 {font-size: 150%; font-weight: bold;}
 blockquote {font-style: italic;}
-p.logo {border-bottom: 2px solid black;}
+#logo {border-bottom: 2px solid black;}
 
-.clickimage {
+#clickimage {
     border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    background-color: #dff1c0;
+    border-width: 4px;
+    border-style: double;
+    border-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #abad8b;
     padding: 25px;
-    margin: 30px;
+    padding-left: 80px;
+    /*margin: 30px;
+    margin-right: 200px;*/
+    background-image: url(/images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+
 }
