@@ -42,10 +42,11 @@ blockquote {font-style: italic;}
 
 }
 .ipodimages{
-  border-radius: 25px;
+  border-radius: 0px;
   border-color: black;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
+  margin: 2px;
 }
 
 #footer {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: small; color: black;}
