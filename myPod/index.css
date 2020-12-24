@@ -1,8 +1,7 @@
 
 @font-face {
     font-family: "Emblema One";
-    src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
-    url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");}
+    src: url("/fonts/EmblemaOne-Regular.woff")}
 
 @media screen and (min-device-width: 481px) {
     #clickimage {margin-right: 200px;}
@@ -14,7 +13,7 @@
     body {font-family: Times, "Times New Roman", serif;}
 }
 
-body {background-color: #fdfacc; font-family: Verdana, Helvetica, Arial, sans-serif;
+body {background-color: #fffcbf; font-family: Verdana, Helvetica, Arial, sans-serif;
         font-size: small; line-height: 1.6em;}
 p.welcome {color: black;}
 p.seattle {color: black;}
@@ -26,7 +25,10 @@ h1, h2 {color: rgb(70, 70, 70); font-family: "Emblema One", Verdana, Geneva, san
 h1 {font-size: 200%;}
 h2 {font-size: 150%; font-weight: bold;}
 blockquote {font-style: italic;}
-#logo {border-bottom: 2px solid black;}
+#logo {border-bottom: 2px solid black;
+        margin-left: 5px;
+        margin-right: 20px;
+}
 
 #clickimage {
     border-color: black;
@@ -37,14 +39,17 @@ blockquote {font-style: italic;}
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 100px;
-    background-color: #b3ad60;
+    background-color: #7e7a51;
     padding: 25px;
-    padding-left: 75px;
+    padding-left: 95px;
     /*margin: 30px;
-    margin-right: 200px;*/
+    margin-inline-start: 100px;
+    margin-inline-end: 700px;*/
     background-image: url(/images/background.gif);
     background-repeat: no-repeat;
     background-position: top left;
+    background-position-x: 1.5%;
+    max-width: 400px;
 }
 .ipodimages{
     border-radius: 25px;
@@ -52,3 +57,5 @@ blockquote {font-style: italic;}
     border-width: 2px;
     border-style: solid;
 }
+
+#footer {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: small; color: black;}

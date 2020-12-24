@@ -1,37 +1,51 @@
-body {
-    font-size:           small;
-    font-family:         Verdana, Helvetica, Arial, sans-serif;
-    line-height:         1.6em;
-  }
-  
-  h1, h2 {
-    color:               #007e7e;
-  }
-  
-  h1 {
-    font-size:           150%;
-  }
-  
-  h2 {
-    font-size:           130%;
-  }
-  
-  #clickimage {
-    line-height:         1.9em;
-    font-style:          italic;
-    font-family:         Georgia, "Times New Roman", Times, serif;
-    color:               #444444;
-    border-color:        white;
-    border-width:        1px;
-    border-style:        dashed;
-    background-color:    #a7cece;
-    padding:             25px;
-    margin:              30px;
-  /*
-    padding-left:        80px;
-    margin-right:        250px;
-    background-image:    url(images/background.gif);
-    background-repeat:   no-repeat;
-    background-position: top left;
-  */
-  }
+
+@font-face {
+  font-family: "Emblema One";
+  src: url("/fonts/EmblemaOne-Regular.woff")}
+
+
+body {background-color: #fffcbf; font-family: Verdana, Helvetica, Arial, sans-serif;
+      font-size: small; line-height: 1.6em;}
+p.welcome {color: black;}
+p.seattle {color: black;}
+p.england {color: black;}
+h1, h2 {color: rgb(70, 70, 70); font-family: "Emblema One", Verdana, Geneva, sans-serif;
+      text-decoration: underline;
+      /*border-bottom: thin dotted #888888;*/
+}
+h1 {font-size: 200%;}
+h2 {font-size: 150%; font-weight: bold;}
+blockquote {font-style: italic;}
+#logo {border-bottom: 2px solid black;
+      margin-left: 5px;
+      margin-right: 20px;
+}
+
+#clickimage {
+  border-color: black;
+  border-width: 6px;
+  border-style: double;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #7e7a51;
+  padding: 20px;
+  padding-left: 80px;
+  /*margin: 30px;
+  margin-inline-start: 100px;
+  margin-inline-end: 700px;*/
+  background-image: url(/images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+
+}
+.ipodimages{
+  border-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#footer {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: small; color: black;}
