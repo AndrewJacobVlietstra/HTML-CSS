@@ -1,0 +1,50 @@
+body {background-color: white; font-family: Verdana, Helvetica, Arial, sans-serif;
+      font-size: small; line-height: 1.6em;}
+p.welcome {color: black;}
+p.seattle {color: black;}
+p.england {color: black;}
+h1, h2 {color: rgb(70, 70, 70); font-family: Georgia, Verdana, Geneva, sans-serif;
+      text-decoration: underline;
+      /*border-bottom: thin dotted #888888;*/
+}
+h1 {font-size: 190%;}
+h2 {font-size: 140%; font-weight: bold;}
+blockquote {font-style: italic;}
+#logo {border-bottom: 2px solid black;
+      margin-left: 5px;
+      margin-right: 20px;
+}
+
+#guarantee {
+  line-height:         1.9em;
+  font-style:          italic;
+  font-family:         Georgia, "Times New Roman", Times, serif;
+  color:               #444444;
+  border-color:        white;
+  border-width:        1px;
+  border-style:        dashed;
+  background-color:    #a7cece;
+  padding:             25px;
+  padding-left:        80px;
+  margin:              25px;
+  background-image:    url("images/background.gif");
+  background-repeat:   no-repeat;
+  background-position: top left;
+
+}
+#elixirs {
+  
+  border-color:        teal;
+  border-width:        thin;
+  border-style:        solid;
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  text-align: center;
+  background-image: url(/images/cocktail.gif);
+  background-repeat:repeat-x;
+}
+
+#footer {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: small; color: black;}
