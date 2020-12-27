@@ -46,7 +46,7 @@ h2 {
   border-width:  2px;
   border-style:  solid;
   border-radius: 15px;
-  width: 200px;
+  width: 300px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -88,4 +88,25 @@ h2 {
 }
 .artist { 
   font-weight: bold;
+}
+
+#join_us {
+  font-weight: bold;
+}
+
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: teal;
+}
+a:focus {
+  color: rgb(33, 168, 33);
+}
+a:active {
+  color: rgb(30, 109, 255);
 }
