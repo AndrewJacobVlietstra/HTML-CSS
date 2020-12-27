@@ -1,19 +1,23 @@
-body {background-color: white; font-family: Verdana, Helvetica, Arial, sans-serif;
-      font-size: small; line-height: 1.6em;}
-p.welcome {color: black;}
-p.seattle {color: black;}
-p.england {color: black;}
-h1, h2 {color: rgb(70, 70, 70); font-family: Georgia, Verdana, Geneva, sans-serif;
-      text-decoration: underline;
-      /*border-bottom: thin dotted #888888;*/
+@font-face {
+  font-family: "Emblema One";
+  src: url("/fonts/EmblemaOne-Regular.woff")}
+
+body {background-color: rgb(238, 252, 255); 
+      font-family: Verdana, Helvetica, Arial, sans-serif;
+      font-size: small; 
+      line-height: 1.6em;}
+h1, h2 {
+  color:               #007e7e;
 }
-h1 {font-size: 190%;}
-h2 {font-size: 140%; font-weight: bold;}
-blockquote {font-style: italic;}
-#logo {border-bottom: 2px solid black;
-      margin-left: 5px;
-      margin-right: 20px;
+
+h1 {
+  font-size:           150%;
 }
+
+h2 {
+  font-size:           130%;
+}
+
 
 #guarantee {
   line-height:         1.9em;
@@ -33,18 +37,47 @@ blockquote {font-style: italic;}
 
 }
 #elixirs {
-  
-  border-color:        teal;
-  border-width:        thin;
-  border-style:        solid;
+  border-color:teal;
+  border-width:  2px;
+  border-style:  solid;
+  border-radius: 15px;
   width: 200px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  margin-left: 20px;
   text-align: center;
-  background-image: url(/images/cocktail.gif);
-  background-repeat:repeat-x;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/images/cocktail_top.gif) top repeat-x,
+              url(/images/cocktail_bottom.gif) bottom repeat-x;
+  background-color: white;
+  
 }
 
-#footer {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: small; color: black;}
+#elixirs {line-height: 1.1;
+}
+
+#elixirs h2 {
+  color: black;
+  font-family: "Emblema One", Verdana, Geneva, sans-serif;
+}
+
+#elixirs h3 {
+  color: crimson;
+  font-family: "Emblema One", Verdana, Geneva, sans-serif;
+}
+
+#logo {
+  border-bottom: thin solid black;
+}
+
+#footer {
+  font-size: 70%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.cd { 
+  font-style: italic;
+}
+.artist { 
+  font-weight: bold;
+}

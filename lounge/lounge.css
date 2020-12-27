@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Emblema One";
+  src: url("/fonts/EmblemaOne-Regular.woff")}
+
 body {
   font-size:           small;
   font-family:         Verdana, Helvetica, Arial, sans-serif;
   line-height:         1.6em;
+  background-color: rgb(238, 252, 255);
+  
 }
 
 h1, h2 {
@@ -32,21 +38,54 @@ h2 {
   background-image:    url("images/background.gif");
   background-repeat:   no-repeat;
   background-position: top left;
-  width: 45%;
+  width: 400px;
 }
 
 #elixirs {
-  
-  border-color:        teal;
-  border-width:        thin;
-  border-style:        solid;
+  border-color:teal;
+  border-width:  2px;
+  border-style:  solid;
+  border-radius: 15px;
   width: 200px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  margin-left: 20px;
   text-align: center;
-  background-image: url(/images/cocktail.gif);
-  background-repeat:repeat-x;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/images/cocktail_top.gif) top repeat-x,
+              url(/images/cocktail_bottom.gif) bottom repeat-x;
+  background-color: white;
   
+}
+
+#elixirs {line-height: 1.1;
+}
+
+#elixirs h2 {
+  color: black;
+  font-family: "Emblema One", Verdana, Geneva, sans-serif;
+}
+
+#elixirs h3 {
+  color: crimson;
+  font-family: "Emblema One", Verdana, Geneva, sans-serif;
+}
+
+#logo {
+  border-bottom: thin solid black;
+}
+
+#footer {
+  font-size: 70%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.cd { 
+  font-style: italic;
+}
+.artist { 
+  font-weight: bold;
 }
