@@ -2,9 +2,13 @@
   font-family: "Emblema One";
   src: url("/fonts/EmblemaOne-Regular.woff")}
 
+@font-face {
+  font-family: "Aleo";
+  src: url("/fonts/aleo-regular-webfont.woff")}
+
 body {
   font-size:           small;
-  font-family:         Verdana, Helvetica, Arial, sans-serif;
+  font-family:         "Aleo", Verdana, Helvetica, Arial, sans-serif;
   line-height:         1.6em;
   background-color: rgb(238, 252, 255);
   
@@ -15,11 +19,13 @@ h1, h2 {
 }
 
 h1 {
-  font-size:           150%;
+  font-size: 175%;
 }
-
 h2 {
-  font-size:           130%;
+  font-size: 155%;
+}
+h3{
+  font-size: 130%;
 }
 
 #guarantee {
@@ -33,12 +39,12 @@ h2 {
   background-color:    #a7cece;
   padding:             25px;
   padding-left:        80px;
-  margin:              30px;
+  margin:              20px;
   margin-right:        250px;
   background-image:    url("images/background.gif");
   background-repeat:   no-repeat;
   background-position: top left;
-  width: 400px;
+  width: 300px;
 }
 
 #elixirs {
@@ -56,7 +62,8 @@ h2 {
   background: url(/images/cocktail_top.gif) top repeat-x,
               url(/images/cocktail_bottom.gif) bottom repeat-x;
   background-color: white;
-  
+  float: right;
+
 }
 
 #elixirs {line-height: 1.1;
@@ -77,10 +84,13 @@ h2 {
 }
 
 #footer {
-  font-size: 70%;
+  font-size: 80%;
   text-align: center;
   line-height: normal;
   margin-top: 30px;
+
+
+  
 }
 
 .cd { 
@@ -95,18 +105,45 @@ h2 {
 }
 
 
-a:link {
-  color: blue;
+#elixirs a:link {
+  color: #007e7e;
+  text-decoration: none;
 }
-a:visited {
+#elixirs a:visited {
   color: purple;
+  text-decoration: none;
 }
-a:hover {
+#elixirs a:hover {
   color: teal;
+  background-color: #dddddd;
+  text-decoration: underline;
 }
-a:focus {
-  color: rgb(33, 168, 33);
+
+#directions a:link {
+  color: #007e7e;
+  text-decoration: none;
 }
-a:active {
-  color: rgb(30, 109, 255);
+#directions a:visited {
+  color: purple;
+  text-decoration: none;
+}
+#directions a:hover {
+  color: teal;
+  background-color: #dddddd;
+  font-style: italic;
+}
+
+
+#elixirs p{
+  transition: transform 0.12s;
+}
+#elixirs p:hover {
+  transform: scale(1.08);
+}
+
+.zoom {
+  transition: transform 0.4s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.08); /* (8% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

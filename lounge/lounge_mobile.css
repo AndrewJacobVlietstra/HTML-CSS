@@ -41,7 +41,7 @@ h2 {
   border-width:  2px;
   border-style:  solid;
   border-radius: 15px;
-  width: 200px;
+  width: 300px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -64,6 +64,10 @@ h2 {
   font-family: "Emblema One", Verdana, Geneva, sans-serif;
 }
 
+#join_us {
+  font-weight: bold;
+}
+
 #logo {
   border-bottom: thin solid black;
 }
@@ -80,4 +84,20 @@ h2 {
 }
 .artist { 
   font-weight: bold;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: teal;
+}
+a:focus {
+  color: rgb(33, 168, 33);
+}
+a:active {
+  color: rgb(30, 109, 255);
 }
