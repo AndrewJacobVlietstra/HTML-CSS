@@ -1,0 +1,130 @@
+body { 
+  background-color: #c7b181;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
+}
+h1 {
+  font-size:        135%;
+  color:            #954b4b;
+}
+
+/*#allcontent {
+  width: 800px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #675c47;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+div#tableContainer {
+  display: table;
+  border-spacing: 10px
+
+}
+
+div#tableRow{
+  display: table-row;
+  
+}
+
+#header {
+  background-color:#47391e;
+  margin:           10px 10px 0px 10px;
+  height:           108px;
+  border-radius: 30px;
+}
+
+#drinks{ 
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  padding: 17px;
+  vertical-align: top;
+  border-radius: 30px;
+}
+
+#main {
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  padding: 20px;
+  vertical-align: top;
+  border-radius: 30px;
+}
+
+#sidebar {
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) bottom right;
+  font-size: 105%;
+  padding: 18px;
+  vertical-align: top;
+  border-radius: 30px;
+
+}
+
+#footer {
+  background-color: #47391e;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          5px;
+  margin:           0px 10px 10px 10px;
+  font-size:        85%;
+  border-radius: 30px;
+  clear: left;
+
+
+}
+
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+a:link {
+  color:            #c44d4d;
+  text-decoration:  none;
+}
+a:visited {
+  color:            rgb(133, 64, 133);
+  text-decoration:  none;
+}
+a:hover {
+  color:           teal;
+  text-decoration:  underline;
+}
+
+.zoom {
+  transition: transform 0.25s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.12); /* (12% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#drinks p {
+  transition: transform 0.10s; /* Animation */
+}
+#drinks p:hover {
+  transform: scale(1.10); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#main p {
+  transition: transform 0.10s; /* Animation */
+}
+#main p:hover {
+  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#sidebar p {
+  transition: transform 0.10s; /* Animation */
+}
+#sidebar p:hover {
+  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#footer p {
+  transition: transform 0.10s; /* Animation */
+}
+#footer p:hover {
+  transform: scale(1.04); /* (4% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
