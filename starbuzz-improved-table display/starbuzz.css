@@ -114,17 +114,11 @@ a:hover {
   transition: transform 0.10s; /* Animation */
 }
 #main p:hover {
-  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.025); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 #sidebar p {
   transition: transform 0.10s; /* Animation */
 }
 #sidebar p:hover {
-  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-#footer p {
-  transition: transform 0.10s; /* Animation */
-}
-#footer p:hover {
-  transform: scale(1.04); /* (4% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.025); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
