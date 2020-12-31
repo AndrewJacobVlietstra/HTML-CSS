@@ -29,42 +29,90 @@ div#tableRow{
   
 }
 
-#header {
+.headerTop {
   background-color:#47391e;
   margin:           10px 10px 0px 10px;
   height:           108px;
   border-radius: 30px;
 }
 
-#drinks{ 
+#headerLogo {
+  float: left;
+}
+#headerSlogan { 
+  float: right;
+}
+
+nav {
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  text-align: left;
+  padding: 5px 0px 5px 10px;
+
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 5px 0px 5px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  border-bottom: none;
+  font-weight: bold;
+  color: #954b4b;
+  }
+
+nav ul li a:hover {
+  color: #d16868;
+  text-decoration: underline;
+  font-weight: bold;
+  }
+
+nav ul li.selected {
+  background-color: #e0b86d;
+  font-weight: bold;
+  border-radius: 10px;
+  }
+
+section#drinks{ 
   display: table-cell;
   background: #efe5d0 url(images/background.gif) top left;
   font-size: 105%;
   padding: 17px;
   vertical-align: top;
+  text-align: center;
   border-radius: 30px;
+  width: 20%;
 }
 
-#main {
+section#main, section#blog {
   display: table-cell;
   background: #efe5d0 url(images/background.gif) top left;
   font-size: 105%;
   padding: 20px;
   vertical-align: top;
+  text-align: center;
   border-radius: 30px;
 }
 
-#sidebar {
+aside {
   display: table-cell;
   background: #efe5d0 url(images/background.gif) bottom right;
   font-size: 105%;
   padding: 18px;
   vertical-align: top;
+  text-align: center;
   border-radius: 30px;
 
 }
 
-#footer {
+footer {
   background-color: #47391e;
   color:            #efe5d0;
   text-align:       center;
@@ -72,11 +120,12 @@ div#tableRow{
   margin:           0px 10px 10px 10px;
   font-size:        85%;
   border-radius: 30px;
-  clear: left;
-
 
 }
 
+#starbuzz_CEO {
+  border-radius: 30px;
+}
 
 .slogan { color: #954b4b; }
 
@@ -99,10 +148,10 @@ a:hover {
 }
 
 .zoom {
-  transition: transform 0.25s; /* Animation */
+  transition: transform 0.15s; /* Animation */
 }
 .zoom:hover {
-  transform: scale(1.12); /* (12% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.07); /* (7% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 #drinks p {
   transition: transform 0.10s; /* Animation */
@@ -114,11 +163,11 @@ a:hover {
   transition: transform 0.10s; /* Animation */
 }
 #main p:hover {
-  transform: scale(1.025); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-#sidebar p {
+aside p, #blog p {
   transition: transform 0.10s; /* Animation */
 }
-#sidebar p:hover {
-  transform: scale(1.025); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+aside p:hover, #blog p:hover {
+  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
