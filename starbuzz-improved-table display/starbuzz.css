@@ -60,7 +60,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 10px 0px 10px;
   
 }
 
@@ -174,4 +174,54 @@ aside p, #blog p {
 }
 aside p:hover, #blog p:hover {
   transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+form {
+  display: table;
+  background: #efe5d0 url(images/background.gif) bottom left;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+form textarea{
+  width: 400px;
+  height: 120px;
+}
+
+div.tableRow {
+  display: table-row;
+}
+
+div.tableRow p {
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px;
+}
+
+div.tableRow p:first-child {
+  text-align: right;
+}
+
+p.heading {
+  font-weight: bold;
+}
+
+
+#navContact {
+  margin-bottom: 10px;
+}
+
+#navBeanmachine {
+  margin-bottom: 10px;
+}
+
+#footerBeanmachine {
+  margin-top: 4%;
+}
+
+.topHeader {
+  text-align: center;
 }
