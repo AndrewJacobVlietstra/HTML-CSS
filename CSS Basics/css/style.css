@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4c6ca0;
+}
+
+.sign-up-card {
+    background-color: #fff;
+    max-width: 25%;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+}
+
+
+.form-input {
+    text-align: left;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    color: #696969;
+    
+
+}
+
+.form-paragraph {
+    width: 100%;
+    margin: 5px auto;
+    line-height: 200%;
+    font-size: 90%;
+}
+
+.post-card-paragraph {
+    position: relative;
+    top: -30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.post-card-paragraph a {
+    color: rgb(89, 212, 171);
+    text-decoration: none;
+}
+
+.btn {
+    background-color: rgb(89, 212, 171);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(62, 235, 177);
+}
+
+.heading, .sign-up-subtitle {
+    margin-bottom: 15px;
+    font-size: 92%;
+    color: rgb(44, 44, 44);
+}
+
+.heading {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
