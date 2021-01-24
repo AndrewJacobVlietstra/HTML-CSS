@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presentation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <!-- Page 1 Intro! -->
+        <section class="page" id="page-1">
+            <h1>Welcome to the presentation - Page 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+            </p>
+            <div>
+                <a href="#page-2" class="btn">Next Page
+                    <i class="fas fa-arrow-circle-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Page 2 -->
+        <section class="page" id="page-2">
+            <h1>Page 2</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+            </p>
+            <div>
+                <a href="#page-1" class="btn-dark">Previous Page
+                    <i class="fas fa-arrow-circle-up"></i>
+                </a>
+                <a href="#page-3" class="btn">Next Page
+                    <i class="fas fa-arrow-circle-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Page 3 -->
+        <section class="page" id="page-3">
+            <h1>Page 3</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+            </p>
+            <div>
+                <a href="#page-2" class="btn">Previous Page
+                    <i class="fas fa-arrow-circle-up"></i>
+                </a>
+                <a href="#page-4" class="btn">Next Page
+                    <i class="fas fa-arrow-circle-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Page 4 -->
+        <section class="page" id="page-4">
+            <h1>Page 4</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quia minus voluptatum eveniet neque at dolorum odit doloribus sunt velit ut!
+            </p>
+            <div>
+                <a href="#page-3" class="btn">Previous Page
+                    <i class="fas fa-arrow-circle-up"></i>
+                </a>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script>
+            // Smooth Scroll
+            // Select all links with hashes
+            $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                && 
+                location.hostname == this.hostname
+                ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                    scrollTop: target.offset().top
+                    }, 900, function() {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                    } else {
+                        // $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                        // $target.focus(); // Set focus again
+                    };
+                    });
+                }
+                }
+            });
+        </script>
+    </body>
+
+
+</html>
