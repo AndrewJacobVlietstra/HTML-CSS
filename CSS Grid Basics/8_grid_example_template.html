@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Challenge</title>
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 1rem;
+
+            }
+
+            .item {
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: bold;
+                width: 250px;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .item--1{
+                background-color: orange;
+            }
+            .item--2{
+                background-color: steelblue;
+            }
+            .item--3{
+                background-color: yellowgreen;
+            }
+            .item--4{
+                background-color: purple;
+            }
+            .item--5{
+                background-color: red;
+            }
+            .item--6{
+                background-color: palevioletred;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="grid">
+            <div class="item item--1">Orange</div>
+            <div class="item item--2">Blue</div>
+            <div class="item item--3">Green</div>
+            <div class="item item--4">Violet</div>
+            <div class="item item--5">Red</div>
+            <div class="item item--6">Pink</div>
+        </div>
+
+    </body>
+
+</html>
