@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body {
+  height: 100%;
+}
+
+div {
+  margin: 1.5rem 0;
+}
+
+input {
+  width: max-content;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+
+label,
+fieldset input {
+  cursor: pointer;
+}
+
+form {
+  margin: 1.5rem 0;;
+}
+
+fieldset {
+  border: .1rem solid black;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+legend {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content:flex-start;
+}
+
+/* Have the list of nav items be hidden by default for mobile */
+.main-nav-list {
+  display: flex;
+  visibility: hidden;
+}
+/* Upon click event of show/hide nav button, show or hide the list */
+.active {
+  visibility: visible;
+}
+
+.main-nav-button {
+  margin-right: 1rem;
+  border: 0;
+  background-color: transparent;
+  scale: 1.5;
+  cursor: pointer;
+}
+
+.main-nav-button:hover,
+.main-nav-button:focus {
+  border: .4rem solid;
+  background-color: antiquewhite;
+}
+
+.main-nav-item {
+  margin-right: 1.5rem;
+}
+
+.main-nav-link:hover {
+  color: blueviolet;
+}
+
+.main-nav-link:focus,
+.main-nav-link:active {
+  color: purple;
+}
+
+.modal {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  top: 40%;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: 50rem;
+  padding: 1.5rem;
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: -1.5rem;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  opacity: .75;
+  display: none;
+}
+
+.modal-active {
+  display: block;
+}
